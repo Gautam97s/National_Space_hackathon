@@ -1,0 +1,66 @@
+/* Global styles */
+:root {
+  --primary: #0a3d62;
+  --secondary: #3c6382;
+  --success: #78e08f;
+  --danger: #e55039;
+  --warning: #f6b93b;
+  --light: #f5f6fa;
+  --dark: #2f3640;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Global table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Global form styles */
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #2c5282;
+  transform: translateY(-1px);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+}
